@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hexo",
-  "version": "3.0.0",
+  "version": "5.0.0",
   "description": "ESLint config for Hexo projects",
   "repository": "hexojs/eslint-config-hexo",
   "homepage": "https://hexo.io/",
@@ -11,7 +11,9 @@
   "main": "eslint.js",
   "files": [
     "eslint.js",
-    "test.js"
+    "test.js",
+    "ts.js",
+    "ts-test.js"
   ],
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
   "maintainers": [
@@ -19,15 +21,14 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">= 5.0.0"
+    "eslint": ">= 8.1.0"
   },
   "dependencies": {
-    "eslint-config-prettier": "^6.3.0",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "prettier": "^1.18.2"
+    "eslint-plugin-node": "^11.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0"
   },
   "engines": {
-    "node": ">=8.6.0"
+    "node": ">=12.22.0"
   }
 }

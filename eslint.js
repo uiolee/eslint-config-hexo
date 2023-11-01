@@ -3,7 +3,6 @@ module.exports = {
   plugins: ['node'],
   rules: {
     // override recommended
-    'no-console': 'off',
     'no-empty': ['error', { allowEmptyCatch: true }],
     'no-unused-vars': ['error', { args: 'none' }],
     // Best Practices
@@ -54,6 +53,8 @@ module.exports = {
     'new-parens': 'error',
     'no-array-constructor': 'error',
     'no-extra-label': 'error',
+    'no-multiple-empty-lines': 'error',
+    'no-multi-assign': 'error',
     'no-nested-ternary': 'error',
     'no-new-object': 'error',
     'no-unneeded-ternary': 'error',
@@ -61,12 +62,42 @@ module.exports = {
       uninitialized: 'always',
       initialized: 'never'
     }],
+    'operator-linebreak': ['error', 'before'],
+    'quotes': ['error', 'single'],
+    'semi': 'error',
+    'semi-spacing': ['error', {
+      before: false,
+      after: true
+    }],
+    'space-before-blocks': 'error',
+    'space-before-function-paren': ['error', {
+      anonymous: 'never',
+      named: 'never',
+      asyncArrow: 'always'
+    }],
+    'space-in-parens': 'error',
+    'space-infix-ops': 'error',
+    'space-unary-ops': ['error', {
+      words: false,
+      nonwords: false
+    }],
     'spaced-comment': 'error',
     // ECMAScript 6
+    'arrow-parens': ['error', 'as-needed'],
+    'arrow-spacing': 'error',
+    'generator-star-spacing': ['error', 'after'],
+    'no-confusing-arrow': ['error', { allowParens: true }],
+    'no-const-assign': 'error',
     'no-duplicate-imports': 'error',
     'no-useless-computed-key': 'error',
     'no-useless-constructor': 'error',
     'no-useless-rename': 'error',
+    'no-var': 'error',
+    'prefer-arrow-callback': 'error',
+    'prefer-const': ['error', { ignoreReadBeforeAssign: true }],
+    'rest-spread-spacing': 'error',
+    'template-curly-spacing': 'error',
+    'yield-star-spacing': 'error',
     // Node 8 compatibility
     'node/no-deprecated-api': ['error', {
       'ignoreModuleItems': ['url.parse', 'url.resolve']
