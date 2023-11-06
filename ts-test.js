@@ -1,9 +1,16 @@
+'use strict';
+
+/**
+ * @type { import("@types/eslint").Linter.FlatConfig[] }
+ */
 module.exports = {
-  extends: './ts.js',
+  ...require('./ts.js'),
   rules: {
     'no-unused-expressions': 'off'
   },
-  env: {
-    mocha: true
+  languageOptions: {
+    globals: {
+      ...require('globals').mocha
+    }
   }
 };
