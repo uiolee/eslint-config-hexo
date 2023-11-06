@@ -21,14 +21,21 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">= 8.1.0"
+    "@eslint/eslintrc": "^2.1.2",
+    "@eslint/js": ">=8.33.0",
+    "eslint": ">= 8.33.0",
+    "globals": "^13.23.0"
   },
   "dependencies": {
-    "eslint-plugin-node": "^11.1.0",
-    "@typescript-eslint/eslint-plugin": "^5.7.0",
-    "@typescript-eslint/parser": "^5.7.0"
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint-plugin-n": "^16.2.0",
+    "eslint-plugin-node": "^11.1.0"
   },
   "engines": {
     "node": ">=12.22.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.44.6"
   }
 }
